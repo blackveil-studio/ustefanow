@@ -139,18 +139,18 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(14,18,9,.
   linear-gradient(90deg, rgba(10,13,7,.5) 0%, rgba(10,13,7,.08) 55%, transparent 100%);z-index:2}
 .grain{position:absolute;inset:0;pointer-events:none;opacity:.06;mix-blend-mode:overlay;z-index:3;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 .steam-svg-filter{position:absolute;width:0;height:0;overflow:hidden}
-.tub-steam-container{position:absolute;bottom:44%;left:37%;width:320px;height:1px;overflow:visible;pointer-events:none;z-index:1}
-.steam-layer{position:absolute;bottom:0;width:145px;height:220px;margin-left:-72px;background:radial-gradient(ellipse 50% 55% at 50% 100%,rgba(248,244,232,.5) 0%,rgba(248,244,232,.22) 42%,transparent 76%);filter:url(#natural-smoke) blur(11px);mix-blend-mode:screen;border-radius:50%;transform-origin:bottom center;opacity:0;animation:riseAndFade ease-in-out infinite}
-.layer-1{left:15%;width:115px;height:195px;animation-duration:7s;animation-delay:0s}
-.layer-2{left:32%;width:155px;height:240px;animation-duration:5.5s;animation-delay:1.6s}
-.layer-3{left:50%;width:130px;height:215px;animation-duration:8.5s;animation-delay:3.2s}
-.layer-4{left:68%;width:150px;height:235px;animation-duration:6.2s;animation-delay:4.6s}
-.layer-5{left:85%;width:110px;height:190px;animation-duration:9.4s;animation-delay:2.2s}
+.tub-steam-container{position:absolute;bottom:50%;left:40%;width:340px;height:1px;overflow:visible;pointer-events:none;z-index:1}
+.steam-layer{position:absolute;bottom:0;width:150px;height:225px;margin-left:-75px;background:radial-gradient(ellipse 50% 55% at 50% 100%,rgba(248,244,232,.56) 0%,rgba(248,244,232,.26) 42%,transparent 76%);filter:url(#natural-smoke) blur(11px);mix-blend-mode:screen;border-radius:50%;transform-origin:bottom center;opacity:0;animation:riseAndFade ease-in-out infinite}
+.layer-1{left:10%;width:120px;height:200px;animation-duration:7s;animation-delay:0s}
+.layer-2{left:25%;width:160px;height:245px;animation-duration:5.5s;animation-delay:1.6s}
+.layer-3{left:40%;width:135px;height:220px;animation-duration:8.5s;animation-delay:3.2s}
+.layer-4{left:55%;width:155px;height:240px;animation-duration:6.2s;animation-delay:4.6s}
+.layer-5{left:70%;width:115px;height:195px;animation-duration:9.4s;animation-delay:2.2s}
 @keyframes riseAndFade{
   0%{transform:translateY(20px) scaleX(.6) scaleY(.5);opacity:0}
-  15%{opacity:.8}
-  50%{transform:translateY(-46px) scaleX(1.1) scaleY(1.1);opacity:.46}
-  100%{transform:translateY(-138px) scaleX(1.5) scaleY(1.4);opacity:0}
+  15%{opacity:.9}
+  50%{transform:translateY(-58px) scaleX(1.1) scaleY(1.1);opacity:.58}
+  100%{transform:translateY(-175px) scaleX(1.5) scaleY(1.4);opacity:0}
 }
 .hero-copy{position:relative;z-index:4;padding:104px clamp(24px,6vw,96px) 56px clamp(24px,7vw,96px);max-width:760px}
 .hero-h{font-size:clamp(42px,5.6vw,76px);line-height:1.05;font-weight:600;margin-bottom:24px;color:var(--cream);letter-spacing:-.01em}
@@ -266,16 +266,15 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(14,18,9,.
 /* ===== REVIEWS — parchment postcards ===== */
 .fern-defs{position:absolute;width:0;height:0;overflow:hidden}
 #reviews{position:relative;padding:0 var(--pad) 100px;background:var(--parchment);color:var(--parchment-ink);overflow:hidden}
-.top-fern{position:absolute;top:-12px;width:230px;height:350px;pointer-events:none;z-index:10;filter:drop-shadow(0 15px 25px rgba(18,38,24,.16));opacity:.92}
+.top-fern{position:absolute;top:-12px;width:690px;height:1050px;pointer-events:none;z-index:10;filter:drop-shadow(0 15px 25px rgba(18,38,24,.16));opacity:.92}
 .top-fern img{width:100%;height:100%;object-fit:contain;display:block}
 .fern-left{left:-34px;transform-origin:top center;animation:windLeft 10s infinite ease-in-out}
 .fern-right{right:-34px;transform-origin:top center;animation:windRight 11s infinite ease-in-out}
 .fern-right img{transform:scaleX(-1)}
-@keyframes windLeft{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(4deg) translateY(7px)}}
-@keyframes windRight{0%,100%{transform:rotate(3deg)}50%{transform:rotate(-4deg) translateY(6px)}}
+@keyframes windLeft{0%,100%{transform:rotate(15deg)}50%{transform:rotate(22deg) translateY(10px)}}
+@keyframes windRight{0%,100%{transform:rotate(-15deg)}50%{transform:rotate(-22deg) translateY(9px)}}
 .reviews-inner{position:relative;z-index:1;max-width:1220px;margin:0 auto;padding-top:60px}
 .reviews-glow{position:absolute;border-radius:50%;pointer-events:none;z-index:0;transition:transform .6s var(--ease)}
-.reviews-glow-1{width:360px;height:360px;top:-40px;left:-40px;background:radial-gradient(circle,rgba(14,18,9,.3),transparent 70%);filter:blur(70px)}
 .reviews-glow-2{width:300px;height:300px;bottom:-90px;right:-40px;background:radial-gradient(circle,rgba(36,26,12,.28),transparent 70%);filter:blur(70px)}
 .reviews-top{position:relative;z-index:1;text-align:center;margin-bottom:52px}
 .reviews-top .eyebrow{justify-content:center}
@@ -583,7 +582,6 @@ footer{background:var(--wood);padding:38px var(--pad) 26px;border-top:1px solid 
   <div class="reviews-inner">
     <div class="top-fern fern-left"><img src="assets/fern-frond.png" alt="" loading="lazy"></div>
     <div class="top-fern fern-right"><img src="assets/fern-frond.png" alt="" loading="lazy"></div>
-    <div class="reviews-glow reviews-glow-1"></div>
     <div class="reviews-glow reviews-glow-2"></div>
     <div class="reviews-top">
       <div class="eyebrow on-light r" data-i18n="reviews_eyebrow">Opinie gości</div>
