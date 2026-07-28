@@ -14,7 +14,7 @@
 <meta property="og:description" content="Domek z balią na drewno wśród sosnowego lasu. 25 minut od Białegostoku. Cisza, prywatność, wieczory bez pośpiechu.">
 <meta property="og:image" content="assets/hero-main.jpg">
 <meta property="og:locale" content="pl_PL">
-<meta property="og:locale:alternate" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
 <meta property="og:url" content="https://blackveil-studio.github.io/ustefanow/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="U Stefanów — domek z balią w lesie, Królowy Most">
@@ -416,8 +416,7 @@ footer{background:var(--wood);padding:38px var(--pad) 26px;border-top:1px solid 
     <div class="nav-right">
       <div class="lang-switch liquid-glass bfu" style="animation-delay:140ms">
         <button class="lang-btn active" data-setlang="pl" onclick="setLang('pl')">PL</button>
-        <button class="lang-btn" data-setlang="ru" onclick="setLang('ru')">RU</button>
-        <button class="lang-btn" data-setlang="ua" onclick="setLang('ua')">UA</button>
+        <button class="lang-btn" data-setlang="en" onclick="setLang('en')">EN</button>
       </div>
       <a href="#booking" class="nav-cta bfu" style="animation-delay:180ms" data-i18n="nav_cta">Sprawdź terminy</a>
       <button class="burger" onclick="toggleBurger()" aria-label="Menu">
@@ -435,8 +434,7 @@ footer{background:var(--wood);padding:38px var(--pad) 26px;border-top:1px solid 
   <a href="#location" onclick="closeBurger()" data-i18n="nav_location">Dojazd</a>
   <div class="lang-switch">
     <button class="lang-btn active" data-setlang="pl" onclick="setLang('pl')">PL</button>
-    <button class="lang-btn" data-setlang="ru" onclick="setLang('ru')">RU</button>
-    <button class="lang-btn" data-setlang="ua" onclick="setLang('ua')">UA</button>
+    <button class="lang-btn" data-setlang="en" onclick="setLang('en')">EN</button>
   </div>
   <a href="#booking" class="nav-cta" onclick="closeBurger()" data-i18n="nav_cta">Sprawdź terminy</a>
 </div>
@@ -715,81 +713,43 @@ const I18N = {
     cookie_text:'Ta strona korzysta z mapy Google, która może zapisywać pliki cookie. Więcej w <a href="privacy.html">Polityce prywatności</a>.',
     cookie_ok:'Rozumiem'
   },
-  ru:{
-    logo_caps:'Крулёвы Мост',
-    nav_about:'О домике', nav_gallery:'Галерея', nav_amenities:'Удобства', nav_reviews:'Отзывы', nav_location:'Дорога', nav_cta:'Проверить даты',
-    hero_eyebrow:'Крулёвы Мост · Подляское воеводство',
-    hero_h:'Тишина,<br>до которой<br><em>25 минут.</em>',
-    hero_sub:'Домик среди сосен, купель на дровах, которую топят вечером, и дни без спешки. 25 минут от Белостока, два часа от Варшавы.',
-    hero_btn_primary:'Проверить даты', hero_btn_outline:'Посмотреть домик',
-    hero_badge_strong:'Оценка «превосходно»', hero_badge_label:'32 отзыва на Booking.com',
-    about_eyebrow:'Ваше место силы', about_h:'Время, которое<br>течёт <em>медленнее.</em>',
-    about_p1:'Домик стоит на приватном участке, окружённом сосновым лесом, вдали от городского шума. Вечером вы топите купель, смотрите на пар над водой и слушаете тишину, которую действительно слышно.',
-    about_p2:'Вся территория только ваша — без соседей за стеной, без спешки. Утром вы просыпаетесь под пение птиц, а вечером засыпаете у догорающего костра.',
-    about_fact1_l:'всё пространство только для вас',
-    about_fact2_t:'До 4 гостей', about_fact2_l:'спальня + раскладной диван',
-    about_fact3_l:'от центра Белостока',
-    reels_eyebrow:'Смотрите вживую', reels_h:'Домик <em>в движении.</em>',
-    reels_note:'Парящая купель, утренний туман, вечера у костра — настоящие кадры, без фильтров.',
-    reel_watch:'Рилс',
-    gallery_eyebrow:'Что внутри', gallery_h:'Смотрите <em>своими глазами.</em>', gallery_link:'Больше в Instagram →',
-    amenities_eyebrow:'Удобства', amenities_h:'Всё необходимое<br> — и <em>ничего</em> лишнего',
-    amenities_flow:'Купель на дровах <span class="dot">·</span> Костёр и мангал <span class="dot">·</span> Своя ванная комната <span class="dot">·</span> Кухонная зона <span class="dot">·</span> Кондиционер <span class="dot">·</span> Терраса <span class="dot">·</span> Бесплатная парковка <span class="dot">·</span> Можно с животными',
-    booking_eyebrow:'Бронирование', booking_h:'Проверьте <em>свободные даты</em>',
-    booking_note:'Мы напишем вам как можно скорее с подтверждением даты и ценой.',
-    b_label_checkin:'Заезд', b_label_checkout:'Выезд', b_label_guests:'Количество гостей', b_label_name:'Имя', b_ph_name:'Ваше имя',
-    b_label_contact:'Контакт (телефон / WhatsApp)', b_ph_contact:'+48 ...',
-    b_cta:'Проверить наличие', b_alt:'или забронируйте напрямую через <a href="https://www.booking.com/Share-AVln9tx" target="_blank">Booking.com →</a>',
-    reviews_eyebrow:'Отзывы гостей', reviews_h:'9,1 из 10 —<br><em>32 отзыва.</em>',
-    rev1:'Моё любимое место для быстрой перезагрузки на Подляшье. Очень приятные хозяева, которые заботятся о каждой детали. Рекомендую от всего сердца — возвращаемся и будем возвращаться.',
-    rev2:'Отличные хозяева, быстрая связь, большой участок, возможность отдохнуть в купели после долгих прогулок. Без доплат за гриль, купель и животных.',
-    rev3:'Очень чистый и аккуратный домик в тихом месте, окружённом лесом. Большой сад, беседка — очень приятное место для отдыха.',
-    rev4:'Отличное расположение. Тишина и покой. На месте всё необходимое. Большой плюс — без доплат за собаку, дрова или купель.',
-    location_eyebrow:'Как добраться', location_h:'Мы находимся<br>в <em>Крулёвы Мосте.</em>',
-    location_p:'Домик стоит на приватном участке, вдали от главной дороги. Точный маршрут и инструкции отправляем после подтверждения бронирования.',
-    loc_l1:'Адрес', loc_l2:'От Белостока', loc_v2:'25 минут', loc_l3:'От Варшавы', loc_v3:'2 часа', loc_l4:'Заезд', loc_l5:'Выезд',
-    footer_copy:'© 2026 U Stefanów · Крулёвы Мост', footer_privacy:'Политика конфиденциальности',
-    toast_msg:'Сообщение скопировано — открываем WhatsApp 💌',
-    cookie_text:'Этот сайт использует карту Google, которая может сохранять файлы cookie. Подробнее в <a href="privacy.html">Политике конфиденциальности</a>.',
-    cookie_ok:'Понятно'
-  },
-  ua:{
-    logo_caps:'Крулєви Мост',
-    nav_about:'Будиночок', nav_gallery:'Галерея', nav_amenities:'Зручності', nav_reviews:'Відгуки', nav_location:'Дорога', nav_cta:'Перевірити дати',
-    hero_eyebrow:'Крулєви Мост · Підляське воєводство',
-    hero_h:'Тиша,<br>до якої<br><em>25 хвилин.</em>',
-    hero_sub:'Будиночок серед сосен, купіль на дровах, яку топлять увечері, і дні без поспіху. 25 хвилин від Білостока, дві години від Варшави.',
-    hero_btn_primary:'Перевірити дати', hero_btn_outline:'Подивитись будиночок',
-    hero_badge_strong:'Оцінка «чудово»', hero_badge_label:'32 відгуки на Booking.com',
-    about_eyebrow:'Ваше місце сили', about_h:'Час, який<br>тече <em>повільніше.</em>',
-    about_p1:'Будиночок стоїть на приватній ділянці, оточеній сосновим лісом, далеко від міського шуму. Увечері ви топите купіль, дивитесь на пару над водою і слухаєте тишу, яку справді чути.',
-    about_p2:'Уся територія тільки ваша — без сусідів за стіною, без поспіху. Вранці ви прокидаєтесь під спів птахів, а увечері засинаєте біля вогнища, що згасає.',
-    about_fact1_l:'весь простір тільки для вас',
-    about_fact2_t:'До 4 гостей', about_fact2_l:'спальня + розкладний диван',
-    about_fact3_l:'від центру Білостока',
-    reels_eyebrow:'Дивіться наживо', reels_h:'Будиночок <em>у русі.</em>',
-    reels_note:'Пара над купіллю, ранковий туман, вечори біля вогнища — справжні кадри, без фільтрів.',
+  en:{
+    logo_caps:'Królowy Most',
+    nav_about:'The Cabin', nav_gallery:'Gallery', nav_amenities:'Amenities', nav_reviews:'Reviews', nav_location:'Directions', nav_cta:'Check dates',
+    hero_eyebrow:'Królowy Most · Podlasie',
+    hero_h:'Silence,<br>25 minutes<br><em>away.</em>',
+    hero_sub:'A cabin among the pines, a wood-fired hot tub lit in the evening, and days without rush. 25 minutes from Białystok, two hours from Warsaw.',
+    hero_btn_primary:'Check dates', hero_btn_outline:'See the cabin',
+    hero_badge_strong:'Superb rating', hero_badge_label:'32 reviews on Booking.com',
+    about_eyebrow:'Your place of power', about_h:'Time that<br>moves <em>slower.</em>',
+    about_p1:'The cabin sits on a private plot surrounded by pine forest, far from city noise. In the evening you light the tub, watch the steam rise off the water, and listen to silence you can actually hear.',
+    about_p2:'The whole property is yours alone — no neighbours through the wall, no rush. You wake to birdsong and fall asleep by a dying fire.',
+    about_fact1_l:'the whole space just for you',
+    about_fact2_t:'Up to 4 guests', about_fact2_l:'bedroom + sofa bed',
+    about_fact3_l:'from central Białystok',
+    reels_eyebrow:'Watch it live', reels_h:'The cabin <em>in motion.</em>',
+    reels_note:'Steam over the tub, morning mist, evenings by the fire — real footage, no filters.',
     reel_watch:'Reel',
-    gallery_eyebrow:'Що всередині', gallery_h:'Дивіться <em>на власні очі.</em>', gallery_link:'Більше в Instagram →',
-    amenities_eyebrow:'Зручності', amenities_h:'Усе необхідне<br> — і <em>нічого</em> зайвого',
-    amenities_flow:'Купіль на дровах <span class="dot">·</span> Вогнище і мангал <span class="dot">·</span> Власна ванна кімната <span class="dot">·</span> Кухонна зона <span class="dot">·</span> Кондиціонер <span class="dot">·</span> Тераса <span class="dot">·</span> Безкоштовна парковка <span class="dot">·</span> Можна з тваринами',
-    booking_eyebrow:'Бронювання', booking_h:'Перевірте <em>вільні дати</em>',
-    booking_note:'Ми напишемо вам якнайшвидше з підтвердженням дати і ціни.',
-    b_label_checkin:'Заїзд', b_label_checkout:'Виїзд', b_label_guests:'Кількість гостей', b_label_name:'Імʼя', b_ph_name:'Ваше імʼя',
-    b_label_contact:'Контакт (телефон / WhatsApp)', b_ph_contact:'+48 ...',
-    b_cta:'Перевірити наявність', b_alt:'або забронюйте напряму через <a href="https://www.booking.com/Share-AVln9tx" target="_blank">Booking.com →</a>',
-    reviews_eyebrow:'Відгуки гостей', reviews_h:'9,1 з 10 —<br><em>32 відгуки.</em>',
-    rev1:'Моє улюблене місце для швидкого перезавантаження на Підляшші. Дуже приємні господарі, які дбають про кожну деталь. Рекомендую від щирого серця — повертаємось і будемо повертатись.',
-    rev2:'Чудові господарі, швидкий звʼязок, велика ділянка, можливість відпочити в купелі після довгих прогулянок. Без доплат за гриль, купіль і тварин.',
-    rev3:'Дуже чистий і охайний будиночок у тихому місці, оточеному лісом. Великий сад, альтанка — дуже приємне місце для відпочинку.',
-    rev4:'Чудове розташування. Тиша і спокій. На місці все необхідне. Великий плюс — без доплат за собаку, дрова чи купіль.',
-    location_eyebrow:'Як дістатися', location_h:'Ми знаходимось<br>у <em>Крулєви Мості.</em>',
-    location_p:'Будиночок стоїть на приватній ділянці, далеко від головної дороги. Точний маршрут і інструкції надсилаємо після підтвердження бронювання.',
-    loc_l1:'Адреса', loc_l2:'Від Білостока', loc_v2:'25 хвилин', loc_l3:'Від Варшави', loc_v3:'2 години', loc_l4:'Заїзд', loc_l5:'Виїзд',
-    footer_copy:'© 2026 U Stefanów · Крулєви Мост', footer_privacy:'Політика конфіденційності',
-    toast_msg:'Повідомлення скопійовано — відкриваємо WhatsApp 💌',
-    cookie_text:'Цей сайт використовує карту Google, яка може зберігати файли cookie. Детальніше в <a href="privacy.html">Політиці конфіденційності</a>.',
-    cookie_ok:'Зрозуміло'
+    gallery_eyebrow:'What\'s inside', gallery_h:'See it <em>for yourself.</em>', gallery_link:'More on Instagram →',
+    amenities_eyebrow:'Amenities', amenities_h:'Everything you need<br> — and <em>nothing</em> more',
+    amenities_flow:'Wood-fired hot tub <span class="dot">·</span> Fire pit &amp; grill <span class="dot">·</span> Private bathroom <span class="dot">·</span> Kitchenette <span class="dot">·</span> Air conditioning <span class="dot">·</span> Terrace <span class="dot">·</span> Free parking <span class="dot">·</span> Pets welcome',
+    booking_eyebrow:'Booking', booking_h:'Check <em>available dates</em>',
+    booking_note:'We\'ll write back as soon as possible with the date and price confirmed.',
+    b_label_checkin:'Check-in', b_label_checkout:'Check-out', b_label_guests:'Number of guests', b_label_name:'Name', b_ph_name:'Your name',
+    b_label_contact:'Contact (phone / WhatsApp)', b_ph_contact:'+48 ...',
+    b_cta:'Check availability', b_alt:'or book directly via <a href="https://www.booking.com/Share-AVln9tx" target="_blank">Booking.com →</a>',
+    reviews_eyebrow:'Guest reviews', reviews_h:'9.1 out of 10 —<br><em>32 reviews.</em>',
+    rev1:'My favourite spot for a quick reset in Podlasie. Wonderful hosts who care about every detail. I recommend it wholeheartedly — we keep coming back.',
+    rev2:'Great hosts, easy to reach, a big plot, and the chance to relax in the hot tub after long walks. No extra charge for the grill, the tub, or pets.',
+    rev3:'A very clean, tidy cabin in a quiet spot surrounded by forest. Big garden, a gazebo — a genuinely lovely place to unwind.',
+    rev4:'Great location. Peace and quiet. Everything you need is right there. A big plus — no extra fees for the dog, firewood, or the tub.',
+    location_eyebrow:'Getting here', location_h:'You\'ll find us<br>in <em>Królowy Most.</em>',
+    location_p:'The cabin sits on a private plot, off the main road. We send the exact route and directions once your booking is confirmed.',
+    loc_l1:'Address', loc_l2:'From Białystok', loc_v2:'25 minutes', loc_l3:'From Warsaw', loc_v3:'2 hours', loc_l4:'Check-in', loc_l5:'Check-out',
+    footer_copy:'© 2026 U Stefanów · Królowy Most', footer_privacy:'Privacy Policy',
+    toast_msg:'Message copied — opening WhatsApp 💌',
+    cookie_text:'This site uses Google Maps, which may store cookies. More in the <a href="privacy.html">Privacy Policy</a>.',
+    cookie_ok:'Got it'
   }
 };
 
@@ -816,10 +776,9 @@ function setLang(l){
 
 /* ===================== MARQUEE ===================== */
 const marqueePl = ['Balia na drewno','Ognisko i grill','Prywatna działka','Las sosnowy','25 min od Białegostoku','Zwierzęta mile widziane'];
-const marqueeRu = ['Купель на дровах','Костёр и мангал','Приватный участок','Сосновый лес','25 мин от Белостока','Можно с животными'];
-const marqueeUa = ['Купіль на дровах','Вогнище і мангал','Приватна ділянка','Сосновий ліс','25 хв від Білостока','Можна з тваринами'];
+const marqueeEn = ['Wood-fired hot tub','Fire pit & grill','Private plot','Pine forest','25 min from Białystok','Pets welcome'];
 function renderMarquee(){
-  const arr = lang==='pl' ? marqueePl : (lang==='ru' ? marqueeRu : marqueeUa);
+  const arr = lang==='pl' ? marqueePl : marqueeEn;
   const items = arr.map(t=>`<span class="marquee-item">${t}</span><span class="marquee-item marquee-dot">✦</span>`).join('');
   document.getElementById('marquee-track').innerHTML = items + items;
 }
@@ -860,9 +819,7 @@ function sendBooking(){
   const contact = document.getElementById('b-contact').value || '—';
   const text = lang==='pl'
     ? `Dzień dobry! Chciał(a)bym sprawdzić dostępność domku U Stefanów.\nPrzyjazd: ${checkin}\nWyjazd: ${checkout}\nLiczba gości: ${guests}\nImię: ${name}\nKontakt: ${contact}`
-    : lang==='ru'
-    ? `Здравствуйте! Хочу проверить доступность домика U Stefanów.\nЗаезд: ${checkin}\nВыезд: ${checkout}\nКоличество гостей: ${guests}\nИмя: ${name}\nКонтакт: ${contact}`
-    : `Доброго дня! Хочу перевірити наявність будиночка U Stefanów.\nЗаїзд: ${checkin}\nВиїзд: ${checkout}\nКількість гостей: ${guests}\nІмʼя: ${name}\nКонтакт: ${contact}`;
+    : `Hello! I'd like to check the availability of the U Stefanów cabin.\nCheck-in: ${checkin}\nCheck-out: ${checkout}\nGuests: ${guests}\nName: ${name}\nContact: ${contact}`;
   if(navigator.clipboard && navigator.clipboard.writeText){
     navigator.clipboard.writeText(text).catch(()=>{});
   }
